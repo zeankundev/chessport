@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'MVB Grenadine';
+    font-weight: 400;
+    src: url('./grenadine_reg.otf');
+}
+@font-face {
+    font-family: 'MVB Grenadine';
+    font-weight: 500;
+    src: url('./grenadine_med.otf');
+}
+@font-face {
+    font-family: 'MVB Grenadine';
+    font-weight: 700;
+    src: url('./grenadine_bold.otf');
+}
+@font-face {
+    font-family: 'MVB Grenadine';
+    font-weight: 800;
+    src: url('./grenadine_blk.otf');
+}

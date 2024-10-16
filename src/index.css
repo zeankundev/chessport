@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: 'MVB Grenadine', sans-serif;
+  background-color: var(--primary-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
