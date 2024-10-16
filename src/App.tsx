@@ -32,7 +32,7 @@ function App() {
           </Link>
         </header>
         <div className='main-body'>
-          <aside className={isSidebarVisible ? 'visible' : 'hidden'} ref={Sidebar}>
+          <aside style={{display: isSidebarVisible ? 'flex' : 'none'}} ref={Sidebar}>
             <Button icon='home' path='/' />
             <Button icon='chess' path='/play' />
             <Button icon='book' path='/learn' />
