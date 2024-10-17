@@ -1,20 +1,15 @@
-import Ionicons from '@expo/vector-icons/Ionicons';
 import { StyleSheet, Image, Platform } from 'react-native';
-
-import { Collapsible } from '@/components/Collapsible';
-import { ExternalLink } from '@/components/ExternalLink';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
 import { ScrollView, View } from 'react-native';
+import Chessboard from 'react-native-chessboard';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export default function TabTwoScreen() {
   return (
-    <ScrollView style={{backgroundColor: '#1d1d1d', paddingTop: 60, paddingLeft: 20, paddingRight: 20, height: 100}}>
-      <View>
-        <ThemedText type='title'>Play a game</ThemedText>
+      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#1d1d1d', paddingTop: 60, height: 100,}}>
+        <GestureHandlerRootView >
+          <Chessboard />
+        </GestureHandlerRootView>
       </View>
-    </ScrollView>
   );
 }
 
