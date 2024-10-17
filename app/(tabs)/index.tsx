@@ -9,7 +9,7 @@ export default function HomeScreen() {
   return (
     <ScrollView style={{backgroundColor: '#1d1d1d', paddingTop: 60, paddingLeft: 20, paddingRight: 20, height: 100}}>
       <View>
-        <ThemedText type='title'>Hello there! <HelloWave></HelloWave></ThemedText>
+        <ThemedText type='title'>Hello there! 👋</ThemedText>
         <ThemedText type='default'>A bit tiring from all of that homework, eh?</ThemedText>
       </View>
     </ScrollView>

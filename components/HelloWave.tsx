@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 24,
     lineHeight: 40,
+    verticalAlign: 'middle',
     marginTop: -6,
   },
 });
