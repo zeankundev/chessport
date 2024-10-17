@@ -11,24 +11,31 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarActiveTintColor: Colors[colorScheme ?? 'dark'].tint,
         headerShown: false,
+        tabBarStyle: {
+          backgroundColor: '#1d1d1d',
+        },
+        tabBarLabelStyle: {
+          fontFamily: 'GrenadineRegular',
+          display: 'none'
+        }
       }}>
       <Tabs.Screen
         name="index"
         options={{
           title: 'Home',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+            <TabBarIcon name='home' color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="gameplay"
         options={{
-          title: 'Explore',
+          title: 'Play a game',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon name='chess-pawn' color={color} />
           ),
         }}
       />
