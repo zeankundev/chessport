@@ -9,10 +9,13 @@
   --text-color-primary: #e9e9e9;
 }
 @keyframes s3 {to{transform: rotate(1turn)}}
+h1, h2, h3, h4 {
+  font-family: 'MVB Grenadine', sans-serif;
+}
 .main {
   background-color: var(--primary-color);
   color: var(--text-color-primary);
-  font-size: 11pt;
+  font-size: 13pt;
 }
 .main-header {
   padding: 15px;
@@ -130,7 +133,7 @@ header svg {
   margin-left: 20px;
   border-radius: 10px;
   overflow: hidden; /* Ensure child elements don't overflow */
-  width: 75%; /* Set a fixed width for control-pane */
+  width: 100%; /* Set a fixed width for control-pane */
 }
 
 .thinking,
@@ -144,8 +147,8 @@ header svg {
   align-items: center;
   background-color: var(--secondary-color);
   padding: 10px;
+  width: 100%;
   font-weight: bold;
-  text-transform: uppercase;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }

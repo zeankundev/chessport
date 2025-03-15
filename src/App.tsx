@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './resources/fonts/grenadine.css'
+import './resources/fonts/spiegel.css'
 import Button from './components/Button';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';

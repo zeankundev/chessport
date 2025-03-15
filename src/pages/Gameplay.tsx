@@ -227,7 +227,7 @@ class Gameplay extends React.Component<{}, GameState> {
           />
         </div>
         <div className='control-pane'>
-          {isComputingMove ? <div className="thinking"><Loader /> &nbsp;<b>Computer is thinking...</b></div> : <div className='thinking'><b>Idle. Waiting your move...</b></div>}
+          {isComputingMove ? <div className="thinking"><Loader /> &nbsp;<b>Computer is thinking...</b></div> : <div className='thinking'><b>&nbsp;&nbsp;Waiting for your move...&nbsp;&nbsp;</b></div>}
           {winStatus === WinningType.Checkmate && (
             <Modal onClose={() => this.setState({ winStatus: WinningType.Neither, isComputingMove: false })} title='You Win!'>
               You won by Checkmate!
@@ -252,7 +252,7 @@ class Gameplay extends React.Component<{}, GameState> {
             )}
           </div>
           <div className='move-log' style={{height: 'min-content', textAlign: 'center', backgroundColor: 'var(--tertiary-color)'}}>
-            <b style={{marginBottom: '15px', textTransform: 'uppercase'}}>Most Recent Move</b>
+            <b style={{marginBottom: '15px'}}>Most Recent Move</b>
             <div className='component-move'><div className='move-counter'>R</div>{this.state.lastRecentMove}</div>
           </div>
           <OnFlexButton 

@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Spiegel';
+    font-weight: 400;
+    src: url('./Spiegel_Regular.ttf');
+}
+@font-face {
+    font-family: 'Spiegel';
+    font-style: italic;
+    font-weight: 400;
+    src: url('./Spiegel_RegularItalic.ttf');
+}
+@font-face {
+    font-family: 'Spiegel';
+    font-weight: 700;
+    src: url('./Spiegel_Bold.ttf');
+}
+@font-face {
+    font-family: 'Spiegel';
+    font-style: italic;
+    font-weight: 700;
+    src: url('./Spiegel_BoldItalic.ttf');
+}
